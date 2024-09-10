@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Welcome to Katik</h1>
+        <p>Hai sobat, Selamat datang di Katik :]</p>
+        <p>Sebuah Web app sederhana yang berfungsi menghitung nilai luas dan keliling bangun datar</p>
+    </header>
+
+    <main>
+        <section class="menu">
+            <button>Segitiga</button>
+            <button style="background-color: white; color: black;">Jajar Genjang</button>
+        </section>
+
+        <section class="Luas-segitiga">
+            <header class="section-header">
+                <h1>Luas Segitiga</h1>
+            </header>
+
+            <figure class="segitiga-img">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGQwiZpWaBtLLs25FRVex81lOwbwl56vx8gd2OKi5NWExFJFiw"
+                    alt="Gambar Segitiga">
+                <figcaption style="padding: 10px;">
+                    <p>Rumus Luas Segitiga Yaitu: </p>
+                    <h3 style="text-align: center;">L = 1/2 x a x t</h3>
+                    <p>Dimana:</p>
+                    <p>L = Luas</p>
+                    <p>a = alas (b)</p>
+                    <p>t = tinggi(h)</p>
+                </figcaption>
+            </figure>
+
+            <form class="segitiga-form" onsubmit=LuasSegitiga(event)>
+                <header>
+                    <h1>Hitung Luas Segitiga</h1>
+                </header>
+                <input type="number" placeholder="Nilai Alas" id="Alas Segitiga">
+                <input type="number" placeholder="Nilai Tinggi" id="Tinggi Segitiga">
+
+                <div style="padding: 10px;" id="output" class="output">
+                    <p>L = 1/2 x a x t</p>
+                    <p>L = 1/2 x <span id="alas">90</span> x <span id="tinggi">90</span></p>
+                    <p>L = <span id="hasilLuas">4050</span></p>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Hitung</button>
+                </div>
+
+                <div class="reset" id="reset">
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="Keliling-segitiga">
+            <header class="section-header">
+                <h1>Keliling Segitiga</h1>
+            </header>
+
+            <figure class="segitiga-img">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTGQwiZpWaBtLLs25FRVex81lOwbwl56vx8gd2OKi5NWExFJFiw"
+                    alt="Gambar Segitiga">
+                <figcaption style="padding: 10px;">
+                    <p>Rumus Keliling Segitiga Yaitu: </p>
+                    <h3 style="text-align: center;">K = S1 + S2 + S3</h3>
+                    <p>Dimana:</p>
+                    <p>K = Keliling</p>
+                    <p>S1 = Alas (b)</p>
+                    <p>S2 = Sisi Miring (a)</p>
+                    <p>S3 = Sisi Miring (a)</p>
+                </figcaption>
+            </figure>
+
+            <form onsubmit=KelilingSegitiga(event) class="segitiga-form">
+                <header>
+                    <h1>Hitung Keliling Segitiga</h1>
+                </header>
+
+                <input type="number" placeholder="Nilai S1" id="S1">
+                <input type="number" placeholder="Nilai S2" id="S2">
+                <input type="number" placeholder="Nilai S3" id="S3">
+
+                <div style="padding: 10px;" id="outputs">
+                    <p>K = S1 + S2 + S3</p>
+                    <p>K = <span id="SS3">10</span> + <span id="SS2">10</span> + <span id="SS1">10</span></p>
+                    <p>K = <span id="K">30</span></p>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Hitung</button>
+                </div>
+
+                <div class="reset" id="reset">
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

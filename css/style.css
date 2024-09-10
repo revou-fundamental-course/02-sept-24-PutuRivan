@@ -1,0 +1,103 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+.main-header{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.menu button{
+    padding: 10px;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+
+.Luas-segitiga, 
+.Keliling-segitiga{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.section-header{
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.segitiga-img{
+    display: flex;
+    flex-direction: column;
+}
+
+.segitiga-img img{
+    width: 400px;
+    justify-items: center;
+    align-self: center;
+}
+
+.segitiga-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.segitiga-form header{
+    text-align: center;
+
+}
+
+.segitiga-form input {
+    padding: 5px;
+}
+
+.segitiga-form .submit{
+    display: flex;
+    justify-content: center;
+
+}
+
+.segitiga-form .submit button{
+    padding: 15px 25px;
+    background-color: blue;
+    color: white;
+    border: none;    
+    border-radius: 10px;
+
+}
+
+.reset{
+    display: flex;
+    justify-content: end;
+    padding: 10px;
+}
+
+.reset button{
+    padding: 15px 25px;
+    background-color: rgb(203, 214, 81);
+    color: white;
+    border: none;    
+    border-radius: 5px;
+}
+
+#output, #outputs{
+    display: none;
+}
